@@ -7,6 +7,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: voyage;
+  src: url(Voyage.otf);
+}
 body{
   background-color: white;
   min-height: 100vh;
@@ -32,6 +36,9 @@ flex-wrap: nowrap;
   background-size: cover;
   background-position: center center;
   background-blend-mode: darken;
+}
+.brand-logo{
+  font-size: 3.5rem;
 }
 .section1{
   background:linear-gradient(45deg,rgb(162, 163, 163),rgb(241, 250, 111) );
@@ -183,8 +190,10 @@ ul{
   height: 80px;
 }
 #lorem{
-  font-size: 18px;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  font-family:Voyage, Courier, monospace;
+  font-weight: 700;
+ 
 
 }
 .text h3 .hidetext {
@@ -226,11 +235,13 @@ ul{
 .distortion{
   width: 500px;
   height: 100%;
+  object-fit: cover;
   
   position: absolute;
   right: 300px;
   bottom: 0;
 }
+
 
 .overlay{
   position: absolute;
@@ -271,7 +282,7 @@ ul{
 /* section 2*/
 .foto{
   display: flex;
-  background-color: white;
+  background-color: transparent;
   position: absolute;
 }
 .fotol{
@@ -279,7 +290,7 @@ ul{
   display: flex;
   top:30%;
   left:10%;
-  background-color: #f1fa6f;
+  background-color: transparent;
   width: 300px;
   height: 400px;
   z-index: 2;
@@ -294,7 +305,7 @@ ul{
   justify-content: space-evenly;
   top:20%;
   left:30%;
-  background-color: #e8f07e;
+  background-color: transparent;
   width: 500px;
   height: 400px;
   z-index: 4;
@@ -371,10 +382,16 @@ font-family: 'Lobster', cursive;
 .menu-left{
     text-align: left;
     margin-left: 4em;
+    font-family: Voyage,sans-serif;
+    font-size: 1.8rem;
 }
 .menu-center{
     text-align: center;
+    font-family: Voyage,sans-serif;
+    
+    
 }
+
 .menu-right{
     text-align: right;
     margin-right:4em;
@@ -448,8 +465,11 @@ img{
     left: 50%;
     transform: translate(-50%,-50%);
     color: rgb(241, 250, 111);
-   font-family: 'Lobster', cursive, sans-serif;
-   font-size: 180px;
+    font-family: Lobster,sans-serif;
+    font-size: 180px;
+    font-weight: 500;
+    
+   
 }
  .title .letter{
     display: inline-block;
@@ -588,19 +608,12 @@ img{
   background-color: #080000;
   text-align: center;
 }
-.section5 p{
+.section5 h1{
   color:#fff;
-  font-size: 30px;
+  font-size: 4rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  place-items: center;
+  letter-spacing: 50px;
 }
-.section5 i{
-  color: red;
-  padding: 0;
-  scale: 2;
 
-}
-.section5 a{
-  width: 100%;
-  margin: 0;
-
-}
